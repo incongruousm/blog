@@ -1,0 +1,25 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+#permalink:           pretty
+permalink: /musings/:year/:month/:day/:title.html
+relative_permalinks: true
+
+# Setup
+title:               Musings
+tagline:             ''
+description:         'Description'
+url:                 http://jason.deabill.com
+baseurl:             '/musings'
+paginate:            2
+paginate_path:	 	 '/musings/page:num'
+
+# About/contact
+author:
+  name:              Jason Deabill
+  url:               https://twitter.com/incongruousm
+  email:             
+
+# Custom vars
+#version:             1.0.0
+highlighter:         rouge
