@@ -12,7 +12,7 @@ description:         'Description'
 url:                 http://jason.deabill.com
 baseurl:             '/musings'
 paginate:            5
-paginate_path:	 	 '/musings/page:num'
+paginate_path:       '/musings/page:num'
 
 # About/contact
 author:
@@ -23,3 +23,6 @@ author:
 # Custom vars
 #version:             1.0.0
 highlighter:         rouge
+
+kramdown:
+  input:             GFM
