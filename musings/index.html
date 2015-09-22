@@ -5,6 +5,9 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
+  {% if post.layout == 'aside' %}
+    {{ post.content }}
+  {% else %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
@@ -16,6 +19,7 @@ title: Home
 
     {{ post.content }}
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 
