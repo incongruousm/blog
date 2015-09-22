@@ -6,7 +6,11 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   {% if post.layout == 'aside' %}
-    {{ post.content }}
+    <h1 class="post-title">
+      {{ post.content }}
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
   {% else %}
   <div class="post">
     <h1 class="post-title">
