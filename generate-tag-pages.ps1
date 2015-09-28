@@ -1,0 +1,1 @@
+get-content .\_data\tags.yml | select-string "^[^ \t]" | %{ $a = $_.Line.TrimEnd(':'); "---`nlayout: page`ntag: $a`npermalink: /musings/tag/$a/`n---`n`n" | Out-File -FilePath ".\$a.md" -Encoding ascii }

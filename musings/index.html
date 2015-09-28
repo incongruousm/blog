@@ -5,6 +5,9 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
+
+  {% include tags.html %}
+
   {% if post.layout == 'aside' %}
     <h1 class="post-title">
       {{ post.content }}
@@ -19,7 +22,7 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date_to_string }}{{ tags_content }}</span>
 
     {{ post.content }}
   </div>

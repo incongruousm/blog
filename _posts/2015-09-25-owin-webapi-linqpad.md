@@ -2,7 +2,7 @@
 layout: post
 title:  "OWIN WebAPI in LINQPad"
 date:   2015-09-25
-tags:   tech dotnet linqpad
+tags:   tech dotnet linqpad owin
 ---
 
 [LINQPad](http://linqpad.net) is awesome. As a database query tools it's great, but it's a God-send as a prototyping tool. With NuGet integration and decent intellisense it's an ideal tool for rapidly developing sample code.

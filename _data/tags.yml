@@ -1,0 +1,51 @@
+dotnet:
+  slug: dot-net
+  name: .Net
+aurelia:
+  slug: aurelia
+  name: Aurelia
+android:
+  slug: android
+  name: Android
+tech:
+  slug: tech
+  name: Technology
+linqpad:
+  slug: linqpad
+  name: LINQPad
+owin:
+  slug: owin
+  name: OWIN
+asides:
+  slug: asides
+  name: Aside
+books:
+  slug: books
+  name: books
+family:
+  slug: family
+  name: Family
+film:
+  slug: film
+  name: Film
+football:
+  slug: football
+  name: Football
+iisexpress:
+  slug: iis-express
+  name: IIS Express
+links:
+  slug: links
+  name: Links
+musings:
+  slug: thoughts
+  name: Thoughts
+politics:
+  slug: politics
+  name: Politics
+recipes:
+  slug: recipes
+  name: Recipes
+wpf:
+  slug: wpf
+  name: WPF
