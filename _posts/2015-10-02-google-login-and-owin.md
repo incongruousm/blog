@@ -7,7 +7,7 @@ tags:   tech dotnet linqpad owin
 
 In my adventures trying to get to grips with OWIN and WebAPI my next step was to look at how I can use Google as an external OAUTH login provider. My simple app will use Google as its sole form of login so I wanted to fire up my [LINQPad OWIN template]({% post_url 2015-09-25-owin-webapi-linqpad %}) and flesh out the extra steps required to prove a Google login.
 
-Starting out with my temple there's a couple of additional NuGet packages we're going to need.
+Starting out with my template there's a couple of additional NuGet packages we're going to need.
 
 ```
 Microsoft.Owin.Security.Cookies
@@ -98,7 +98,7 @@ The above login method tells the authentication middleware that it should challe
    2. asp.net returns an HTTP 401 due to the `Authorise` attribute
    3. Cookie authentication provider intercepts this and returns an HTTP 302 to `/account/login`
    4. The Account Controller adds a "Google" challenge and returns another HTTP 401
-   5. Google authentication provider interceptns the challenge and initiates a Google login
+   5. Google authentication provider intercepts the challenge and initiates a Google login
 
 The `returnUrl` parameter for `Login` matches the default value of `CookieAuthenticationOptions.ReturnUrlParameter`. The cookie middleware appends a parameter of this name to the query string when it makes a login redirect. The earlier magic of the `/signin-google` route will pick this up post-auth and send the user back to the URL they originally tried to access.
 
