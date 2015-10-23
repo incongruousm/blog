@@ -49,3 +49,6 @@ recipes:
 wpf:
   slug: wpf
   name: WPF
+quote:
+  slug: quote
+  name: Quote
