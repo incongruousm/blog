@@ -11,6 +11,8 @@ PlantUML also provide a [Web Service](http://plantuml.com/server.html) that can 
 
 Available on [GitHub](https://gist.github.com/incongruousm/509ef8820532883f9899b6e980ef6503)
 
+And as [PlantUML Text Encoder.linq](/public/downloads/PlantUML Text Encoder.linq)
+
 ```csharp
 using System.Collections.Generic;
 using System.IO;
@@ -38,8 +40,8 @@ namespace PlantUml.Utils
          for (var i = 0; i < length; i += 3)
          {
             var b1 = bytes[i];
-            var b2 = i + 1 <= length ? bytes[i + 1] : (byte) 0;
-            var b3 = i + 2 <= length ? bytes[i + 2] : (byte) 0;
+            var b2 = i + 1 < length ? bytes[i + 1] : (byte) 0;
+            var b3 = i + 2 < length ? bytes[i + 2] : (byte) 0;
             s.Append(Append3Bytes(b1, b2, b3));
          }
          return s.ToString();
